@@ -1,0 +1,60 @@
+import math
+
+people1, slices1, pizza_cost1 = input().split()
+
+people1 = int(people1)
+slices1 = float(slices1)
+pizza_cost1 = float(pizza_cost1)
+
+num_pies1 = int(math.ceil((people1 * slices1)/8))
+pies_cost1 = num_pies1 * pizza_cost1
+tax1 = pies_cost1 * 0.07
+delivery1 = (pies_cost1 + tax1) * 0.2
+total1 = pies_cost1 + tax1 + delivery1
+
+print("Friday Night Party")
+print(f"{num_pies1} Pizzas: ${pies_cost1:.2f}")
+print(f"Tax: ${tax1:.2f}")
+print(f"Delivery: ${delivery1:.2f}")
+print(f"Total: ${total1:.2f}")
+
+people2, slices2, pizza_cost2 = input().split()
+
+people2 = int(people2)
+slices2 = float(slices2)
+pizza_cost2 = float(pizza_cost2)
+
+num_pies2 = int(math.ceil((people2 * slices2)/8))
+pies_cost2 = num_pies2 * pizza_cost2
+tax2 = pies_cost2 * 0.07
+delivery2 = (pies_cost2 + tax2) * 0.2
+total2 = pies_cost2 + tax2 + delivery2
+
+print("\nSaturday Night Party")
+print(f"{num_pies2} Pizzas: ${pies_cost2:.2f}")
+print(f"Tax: ${tax2:.2f}")
+print(f"Delivery: ${delivery2:.2f}")
+print(f"Total: ${total2:.2f}")
+
+people3, slices3, pizza_cost3 = input().split()
+
+people3 = int(people3)
+slices3 = float(slices3)
+pizza_cost3 = float(pizza_cost3)
+
+num_pies3 = int(math.ceil((people3 * slices3)/8))
+pies_cost3 = num_pies3 * pizza_cost3
+tax3 = pies_cost3 * 0.07
+delivery3 = (pies_cost3 + tax3) * 0.2
+total3 = pies_cost3 + tax3 + delivery3
+
+weekend_total = total1 + total2 + total3
+
+print("\nSunday Night Party")
+print(f"{num_pies3} Pizzas: ${pies_cost3:.2f}")
+print(f"Tax: ${tax3:.2f}")
+print(f"Delivery: ${delivery3:.2f}")
+print(f"Total: ${total3:.2f}")
+
+print(f"\nWeekend Total: ${weekend_total:.2f}")
+
